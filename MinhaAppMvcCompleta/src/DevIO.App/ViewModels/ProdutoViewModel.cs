@@ -31,6 +31,7 @@ namespace DevIO.App.ViewModels
         public IFormFile ImagemUpload { get; set; }
         public string Imagem { get; set; }
 
+        //adicionando parametros para a correção da moeda
         [Moeda]
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         public decimal Valor { get; set; }
